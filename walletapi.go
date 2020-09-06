@@ -24,13 +24,13 @@ func (wallet *WalletAPI) check() error {
 		wallet.URL = "127.0.0.1"
 	}
 	if wallet.Port == 0 {
-		wallet.Port = 8070
+		wallet.Port = 45354
 	}
 	if wallet.DaemonURL == "" {
 		wallet.DaemonURL = "127.0.0.1"
 	}
 	if wallet.DaemonPort == 0 {
-		wallet.DaemonPort = 11898
+		wallet.DaemonPort = 45154
 	}
 	if wallet.RPCPassword == "" {
 		return errors.New("RPCPassword not specified")
